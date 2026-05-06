@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-df=pd.read_csv("population.csv.py")
+df=pd.read_csv("population.csv")
 true_mean=df["value"].mean()
 simple_mean=df.sample(n=20)["value"].mean()
 strat_mean=df.groupby("stratum")\
